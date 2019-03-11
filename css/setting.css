@@ -1,0 +1,128 @@
+@import url("font.css");
+@import url("default.css");
+
+body{
+  background-color: #7ed2f1;
+  text-align: center;
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+}
+
+#settingBackLetter{
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 7.5vw;
+  font-family: MonometricRegular;
+  color: white;
+}
+
+.settingMainDiv{
+  z-index: 2;
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: 20px 20px 25px rgba(0, 0, 0, 0.3);
+  width: 650px;
+  height: 800px;
+  margin: auto;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.settingContentDiv{
+  /* border: 1px solid black; */
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+label{
+  text-align: left;
+  float: left;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+#nameEdit, #idEdit, #pwEdit{
+  border: none;
+  border-bottom: 4px solid #7ed2f1;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 25px;
+  outline: none;
+  font-size: 11.5pt;
+}
+
+
+/* 아이디, 비밀번호 input 클릭시 */
+#nameEdit:focus, #idEdit:focus, #pwEdit:focus{
+  border-bottom: 4px solid #2fb2e2;
+}
+
+#accountSetBtnDiv{
+  /* border: 1px solid black; */
+  width: 500px;
+  height: 50px;
+  position: relative;
+}
+
+#setSaveBtnDiv{
+  /* border: 1px solid black; */
+  width: 500px;
+  height: 50px;
+  position: relative;
+  top: 200px;
+}
+
+#resetAccBtn, #delAccBtn{
+  background-color: transparent !important;
+  border: none;
+  font-weight: bold;
+  /* float: left; */
+  font-size: 1em;
+  vertical-align: middle;
+}
+
+#resetAccBtn:hover, #delAccBtn:hover, #setSaveBtn:hover{
+  cursor: pointer;
+}
+
+#resetAccBtn:focus, #delAccBtn:focus, #setSaveBtn:focus{
+  outline: none;
+}
+
+#setSaveBtn, #delAccBtn{
+  float: right;
+}
+
+#delAccBtn{
+  color: red;
+}
+
+#setSaveBtn{
+  background-color: transparent !important;
+  border: none;
+  font-weight: bold;
+  /* float: left; */
+  font-size: 2em;
+  vertical-align: middle;
+  color: #7ed2f1;
+}
+
+#resetAccBtn{
+  float: left;
+  color: black;
+}

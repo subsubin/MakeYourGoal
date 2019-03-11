@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'MonometricRegular';
+  src: url('../font/MonometricRegular.eot');
+  src: url('../font/MonometricRegular.eot?#iefix') format('embedded-opentype'),
+       url('../font/MonometricRegular.woff') format('woff'),
+       url('../font/MonometricRegular.woff2') format('woff2'),
+       url('../font/MonometricRegular.ttf') format('truetype'),
+       url('../font/MonometricRegular.svg') format('svg');
+}
+
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+div{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+input{
+  font-family: 'Noto Sans KR', sans-serif;
+}

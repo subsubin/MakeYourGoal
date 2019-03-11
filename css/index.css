@@ -1,0 +1,144 @@
+@import url("font.css");
+@import url("default.css");
+
+body{
+  /* background-image: url("../image/indexImage3.png"); */
+  background-color: #7ed2f1;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-attachment: fixed;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* 배경 윗부분 */
+#topBackground{
+  z-index: 1;
+  background-color: white;
+  display: flex;
+  padding: 330px 0;
+  transform: skew(0deg, -10deg)translateY(-30%);
+}
+
+/* 배경 윗부분 타이틀 */
+#topBackText{
+  transform: skew(0deg, 10deg)translateY(-130%);
+}
+
+/* 배경 윗부분 타이틀 글꼴, 색 */
+#topBackText h1{
+  font-family: MonometricRegular;
+  margin: 30px;
+  font-size: 5em;
+  color: #7ed2f1;
+}
+
+/* 배경 아랫부분 타이틀 */
+#bottomBackText{
+  z-index: 1;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  transform: rotate(180deg);
+}
+
+/* 배경 아랫부분 타이틀 글꼴, 색 */
+#bottomBackText h1{
+  font-family: MonometricRegular;
+  margin: 30px;
+  font-size: 5em;
+  color: white;
+}
+
+/* 중앙 DIV */
+.mainDiv{
+  background-color: white;
+  z-index: 2;
+  border-radius: 50px;
+  box-shadow: 20px 20px 25px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  height: 500px;
+  margin: auto;
+  transform: translateY(-110%);
+  text-align: center;
+  position: relative;
+}
+
+/* mainDiv 안 내용이 들어있는 DIV */
+.loginDiv{
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 아이디, 비밀번호 input */
+#idInput, #pwInput{
+  border: none;
+  border-bottom: 4px solid #7ed2f1;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 25px;
+  outline: none;
+  font-size: 11.5pt;
+}
+
+/* 아이디, 비밀번호 input 클릭시 */
+#idInput:focus, #pwInput:focus{
+  border-bottom: 4px solid #2fb2e2;
+}
+
+/* 아이디, 비밀번호 input 클릭시 힌트 없어지게 */
+#idInput:focus::placeholder, #pwInput:focus::placeholder{
+  color: transparent;
+}
+
+/* 아이디, 비밀번호 input 클릭시 */
+#pwInput{
+  margin-top: 30px;
+}
+
+/* FORGOT YOUR PASSWORD? */
+a:link{
+  text-decoration: none;
+  font-size: 10pt;
+  margin-bottom: 25px;
+  color: rgb(187, 187, 187);
+}
+
+/* SIGN UP, SUBMIT 버튼 감싸는 DIV */
+#buttonsDiv{
+  width: 300px;
+  position: relative;
+  top: 130px;
+}
+
+/* SIGN UP */
+#signupBtn{
+  background-color: transparent !important;
+  border: none;
+  color: #7ed2f1;
+  font-weight: bold;
+  float: left;
+  font-size: 1.3em;
+  vertical-align: middle;
+}
+
+/* SIGN UP 버튼 hover */
+#signupBtn:hover{
+  cursor: pointer;
+}
+
+/* SIGN UP 버튼 focus */
+#signupBtn:focus{
+  outline: none;
+}
+
+/* 로그인(submit) 버튼 */
+#submitBtn{
+  float: right;
+  width: 35px;
+  vertical-align: middle;
+}
