@@ -1,0 +1,100 @@
+@import url("font.css");
+@import url("default.css");
+
+div.main {
+  position: absolute;
+  /* z-index: 1; */
+  width: 85%;
+  height: 80vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #7ed2f1;
+}
+
+div.transform {
+  text-align: center;
+  position: relative;
+  top: 320px;
+  left: -150px;
+  /* z-index: 2; */
+  color: white;
+  font-size: 13vh;
+  width: auto;
+  height: auto;
+  float: left;
+  font-family: MonometricRegular;
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+div.board {
+  position: absolute;
+  z-index: 3;
+  width: 75%;
+  height: 80%;
+  left: 18%;
+  top: 10%;
+  background-color: white;
+}
+
+.memo {
+  position: absolute;
+  z-index: 4;
+  width: 15%;
+  height: 10%;
+  left: 75%;
+  top: 13%;
+  background-color: white;
+  color: #ababab;
+  font-size: 25px;
+}
+
+form{
+  /* border: 1px solid black; */
+  position: relative;
+  width: 93%;
+  height: auto;
+  top: 9%;
+  left: 50%;
+}
+
+.inputname, .inputid, .inputpasswd, .inputpasswdc {
+  border-radius: 20px 20px 20px 20px;
+  height: 50px;
+  width: 60%;
+  background-color: #b4e5f7;
+  border: none;
+  font-size: 15pt;
+  padding-left: 20px;
+  text-decoration-color: white;
+  color: white;
+}
+
+input:focus{
+  outline: none;
+}
+
+.p1, .p2, .p3, .p4 {
+  font-size: 20pt;
+}
+
+.form1 {
+  font-weight: 700;
+  line-height: 10%;
+  position: absolute;
+  left: 50px;
+}
+
+.fly{
+  width: 300px;
+  float: right;
+  bottom: -10%;
+  text-align: right;
+  margin-top: 30px;
+}
+
+#submitBtn{
+  width: 35px;
+}
